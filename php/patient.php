@@ -122,12 +122,12 @@
                 </div>
                 <hr>
                 <h3 style=" padding-bottom:20px">Treatment</h3>
-                <div class="form-group">
+                <div class="form-group ADD">
                     <div class="row">
                         <div class="col-md-2">
                             <div style="float:right"><label>Medicine Name</label></div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" id="the-basics">
                             <input type="text" id="medicine_name" class="form-control" placeholder="Enter ...">
                         </div>
                         <div class="col-md-3">
@@ -162,7 +162,7 @@
                                 </div>
                         </div>
                         <div class="col-md-1">
-                            <button type="button" id="medicine_button" class="btn btn-block btn-info">Add</button>
+                            <button type="button" class="medicine_button btn btn-block btn-info">Add</button>
                         </div>
                     </div> 
                 </div>
@@ -178,17 +178,24 @@
 <!-- ./wrapper -->
 <?php include '../html/js.html';?>
 <script>
-    var x = document.getElementsById("tab-in");
-    ("#tab-but").click(function(){
-       $ajax({
-          url:"../ajax/tablet-dropdowns.php",
-          data:'data ='+x,
-          type:"POST",
-          success:function(result)
-           {
-                $(".drop-down").html(result);
-           }
-       }); 
+    $(document).ready(function() {
+        var max_fields      = 10; //maximum input boxes allowed
+        var wrapper         = $(".ADD"); //Fields wrapper
+        var add_button      = $(".medicine_button"); //Add button ID
+
+        var x = 1; //initlal text box count
+        $(add_button).click(function(e){ //on add input button click
+            e.preventDefault();
+            if(x < max_fields){ //max input box allowed
+                x++; //text box increment
+                $(wrapper).append('<div><div class="row"><div class="col-md-2"><div style="float:right"><label>Medicine Name</label></div></div><div class="col-md-4 MEDICINE"><input type="text" id="medicine_name" class="form-control" placeholder="Enter ..."></div><div class="col-md-3"><div class="row"><div class="col-md-3"><div class="checkbox"><label><input id="morning" type="checkbox">Morning</label></div></div><div class="col-md-3"><div class="checkbox"><label><input id="noon" type="checkbox">Noon</label></div></div><div class="col-md-3"><div class="checkbox"><label><input id="night" type="checkbox">Night</label></div></div><div class="col-md-3"><input type="text" id="course" class="form-control" placeholder="Enter ..."></div></div></div><div class="col-md-1"><button type="button" class="remove_field btn btn-block btn-info">Remove</button></div></div></div>'); //add input box
+                }                      
+            }
+        );
+        
+        $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+            e.preventDefault(); $(this).parent('div').parent('div').parent('div').remove(); x--;
+        })
     });
 </script>
 </body>
