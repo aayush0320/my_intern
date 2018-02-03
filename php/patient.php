@@ -19,171 +19,7 @@
 
   <!-- Content Wrapper. Contains page content -->
     <?php
-        if($data == "New")
-        {
-            echo'
-<div class="content-wrapper">
-      <!-- Main content -->
-    <section class="content">
-          <div class="box box-warning">
-            <div class="box-header with-border">    
-                <!-- Content Header (Page header) -->
-                <section class="content-header">
-                  <h1 style="text-align:center">
-                      OPD FORM
-                  </h1>
-                </section>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <form role="form" method="post" action="new_patient.php">
-                <h3 style=" padding-bottom:20px">Personal Information</h3>
-                <!-- text input -->
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div style="float:right"><label>Name</label></div>
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" id="" class="form-control" placeholder="Enter ...">
-                        </div>
-                    </div> 
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div style="float:right"><label>Age</label></div>
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" id="" class="form-control" placeholder="Enter ...">
-                        </div>
-                    </div> 
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div style="float:right"><label>Sex</label></div>
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" id="" class="form-control" placeholder="Enter ...">
-                        </div>
-                    </div> 
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div style="float:right"><label>Contact</label></div>
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" id="" class="form-control" placeholder="Enter ...">
-                        </div>
-                    </div> 
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div style="float:right"><label>Prime</label></div>
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" id="" class="form-control" placeholder="Enter ...">
-                        </div>
-                    </div> 
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div style="float:right"><label>Address</label></div>
-                        </div>
-                        <div class="col-md-8">
-                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-                        </div>
-                    </div> 
-                </div>                  
-                <hr>
-                <h3 style=" padding-bottom:20px">Diagnosis</h3>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div style="float:right"><label>Eleboration</label></div>
-                        </div>
-                        <div class="col-md-8">
-                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-                        </div>
-                    </div> 
-                </div>
-                <hr>
-                <h3 style=" padding-bottom:20px">Reports</h3>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div style="float:right"><label>List</label></div>
-                        </div>
-                        <div class="col-md-8">
-                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-                        </div>
-                    </div> 
-                </div>
-                <hr>
-                <h3 style=" padding-bottom:20px">Treatment</h3>
-                <div class="form-group ADD">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div style="float:right"><label>Medicine Name</label></div>
-                        </div>
-                        <div class="col-md-4" id="the-basics">
-                            <input type="text" id="medicine_name" class="form-control" placeholder="Enter ...">
-                        </div>
-                        <div class="col-md-3">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input id="morning" type="checkbox">
-                                                Morning
-                                            </label>
-                                        </div>               
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input id="noon" type="checkbox">
-                                                Noon
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input id="night" type="checkbox">
-                                                Night
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <input type="text" id="course" class="form-control" placeholder="Enter ...">
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="col-md-1">
-                            <button type="button" class="medicine_button btn btn-block btn-info">Add</button>
-                        </div>
-                    </div> 
-                </div>
-                <div class="row" style="padding-top:15px;padding-bottom:15px">
-                    <div class="col-md-5"></div>
-                    <div class="col-md-2">
-                        <button type="submit" class="btn btn-block btn-primary">Submit</button>
-                    </div>
-                    <div class="col-md-5"></div>
-                </div>
-              </form>
-            </div>
-        </div>
-    </section>
-    <!-- /.content -->
-  </div>';
-        }
-    else if($data == "Old")
+ if($data == "Old")
     {
         echo'
 <div class="content-wrapper">
@@ -194,19 +30,55 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                   <h1 style="text-align:center">
-                      OPD FORM
+                      Search Patient
                   </h1>
                 </section>
             </div>
             <div class="box-body">
                     <form method="post" action="search_patient.php">
-                        <div class="row">
-                            <div class="form-group">
+                        <div class="form-group">
+                            <div class="row">
                                 <div class="col-md-2">
-                                    <div style="float:right"><label>Patient Number</label></div>
+                                    <div style="padding-left:60px;padding-top:9px"><label>Search By</label></div>
+                                </div>
+                                <div class="col-md-2">
+                                  <div class="radio ">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="P_Number">
+                                      Patient Number
+                                    </label>
+                                  </div>                                    
+                                </div>
+                                <div class="col-md-2">
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="C_Number">
+                                      Contact Number
+                                    </label>
+                                  </div>                                                                        
+                                </div>                        
+                            </div>
+                        </div>                    
+                        <div id="Patient_Number" class="form-group">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div style="padding-left:23px"><label>Patient Number</label></div>
                                 </div>
                                 <div class="col-md-8">
-                                    <input type="text" id="" class="form-control" placeholder="Enter ...">
+                                    <input type="text" class="form-control" placeholder="Enter ...">
+                                </div>                        
+                                <div class="col-md-1">
+                                    <button id="btn2" type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Contact_Number" class="form-group">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div style="padding-left:20px"><label>Contact Number</label></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" placeholder="Enter ...">
                                 </div>                        
                                 <div class="col-md-1">
                                     <button id="btn2" type="submit" class="btn btn-primary">Submit</button>
@@ -410,12 +282,18 @@
                     </div> 
                 </div>
                 <div class="row" style="padding-top:15px;padding-bottom:15px">
-                    <div class="col-md-5"></div>
+                    <div class="col-md-4"></div>
                     <div class="col-md-2">
-                        <button type="submit" class="btn btn-block btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-block btn-info">Submit</button>
                     </div>
-                    <div class="col-md-5"></div>
-                </div>                  
+                    
+                    <div class="col-md-2">
+                        <a href="print-subscription.php" target="_blank" class="btn btn-block btn-info">
+                            <i class="fa fa-print"></i> Print
+                        </a>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>                
               </form>
             </div>
         </div>
@@ -448,6 +326,25 @@
         $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
             e.preventDefault(); $(this).parent('div').parent('div').parent('div').remove(); x--;
         })
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#Patient_Number").hide();
+        $("#Contact_Number").hide();
+        
+    $('input[type=radio][name=optionsRadios]').change(function(){
+      if($(this).val()=='P_Number')
+          {
+                $("#Patient_Number").show();
+                $("#Contact_Number").hide();              
+          }
+      else
+          {
+                $("#Patient_Number").hide();
+                $("#Contact_Number").show();                        
+          }
+      })        
     });
 </script>
 </body>

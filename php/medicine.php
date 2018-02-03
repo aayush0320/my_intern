@@ -151,18 +151,18 @@ $_SESSION["total_new_medicine"]=1;
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data Table With Full Features</h3>
+              <h3 class="box-title">Medicine List</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
+                  <th>MR Name</th>
+                  <th>Medicine Name</th>
+                  <th>Type</th>
+                  <th>Quantity</th>
+                  <th>Contact</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -576,11 +576,11 @@ $_SESSION["total_new_medicine"]=1;
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>Rendering engine</th>
-                  <th>Browser</th>
-                  <th>Platform(s)</th>
-                  <th>Engine version</th>
-                  <th>CSS grade</th>
+                  <th>MR Name</th>
+                  <th>Medicine Name</th>
+                  <th>Type</th>
+                  <th>Quantity</th>
+                  <th>Contact</th>
                 </tr>
                 </tfoot>
               </table>
