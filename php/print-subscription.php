@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <?php include '../html/head.html'; ?> 
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../css/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body onload="window.print();">
 <div class="wrapper">
@@ -12,88 +36,138 @@
         <div class="row">
           <div class="col-xs-12">
             <h2 class="page-header">
-              <i class="fa fa-globe"></i> Desai's Clinic.
-              
+                <div style="padding-left:20px;padding-right:20px">
+                    <div class="row" style="border-bottom:1px solid black">
+                        <div class="col-md-2" style="padding-bottom:5px">
+                            <img src="../image/symbol.jpg" style="width:100%;height:90px">
+                        </div>
+                        <div class="col-md-7">
+                            <img src="../image/name.png" style="width:100%;padding-left:20px">         
+                        </div>
+                         <div class="col-md-3" style="padding-bottom:5px">
+                            <div style="text-align:right"> 
+                                <div class="row" ><small>Dr. Rohan Desai</small></div>
+                                <div class="row" ><small>M.B.B.S, C.I.H</small></div>
+                                <div class="row" ><small>Rog. No. : G-42459</small></div>
+                                <div class="row" ><small>&#40;MO&#41;8238021693</small></div>
+                             </div>
+                        </div>                       
+                    </div> 
+                    <div class="row" style="mrgin-top:0px">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <p><small>G-7, Gokul Complex, Poonam Nagar Char Rasta, Behind Avsar Party Plot, Sama-Savali Road, Vadodara-08.</small></p>
+                            </div>
+                        </div>
+                         <div class="col-md-4">
+                              <div style="text-align:right">
+                                <div class="row" ><small>Timing &#40;Mon-Sat&#41;</small></div>
+                                <div class="row" ><small>10am to 1pm &nbsp;&amp;&nbsp;6pm to 9pm </small></div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
             </h2>
           </div>
+
           <!-- /.col -->
         </div>
         <!-- info row -->
         <div class="row invoice-info">
-          <div class="col-sm-4 invoice-col">
-            From
-            <address>
-              <strong>Admin, Inc.</strong><br>
-              795 Folsom Ave, Suite 600<br>
-              San Francisco, CA 94107<br>
-              Phone: (804) 123-5432<br>
-              Email: info@almasaeedstudio.com
-            </address>
-          </div>
-          <!-- /.col -->
-          <div class="col-sm-4 invoice-col">
-            To
-            <address>
-              <strong>John Doe</strong><br>
-              795 Folsom Ave, Suite 600<br>
-              San Francisco, CA 94107<br>
-              Phone: (555) 539-1037<br>
-              Email: john.doe@example.com
-            </address>
-          </div>
-          <!-- /.col -->
-          <div class="col-sm-4 invoice-col">
-            <b>Invoice #007612</b><br>
-            <br>
-            <b>Order ID:</b> 4F3S8J<br>
-            <b>Payment Due:</b> 2/22/2014<br>
-            <b>Account:</b> 968-34567
-          </div>
-          <!-- /.col -->
+                <div class="row" style="padding-left:20px;padding-right:20px">
+                    <div class="col-md-7">
+                        <div class="row ">
+                            <div class="col-md-4">
+                                <div style="float:right"><label>Patient ID</label></div>
+                            </div>
+                            <div class="col-md-8">
+                                1234
+                            </div>
+                        </div>                         
+                    </div>
+                    <div class="col-md-5">
+                         <div class="row ">
+                            <div class="col-md-3">
+                                <div style="float:right"><label>Date</label></div>
+                            </div>
+                            <div class="col-md-3">
+                                22/22/2018
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="row" style="padding-left:20px;padding-right:20px">
+                    <div class="col-md-7">
+                        <div class="row ">
+                            <div class="col-md-4">
+                                <div style="float:right"><label>Patient Name</label></div>
+                            </div>
+                            <div class="col-md-8">
+                                Vishalkumar Rajendrabhai Chaudhary
+                            </div>
+                        </div>                         
+                    </div>
+                    <div class="col-md-5">
+                         <div class="row ">
+                            <div class="col-md-3">
+                                <div style="float:right"><label>Age</label></div>
+                            </div>
+                            <div class="col-md-3">
+                                22
+                            </div>
+                            <div class="col-md-3">
+                                <div style="float:right"><label>Sex</label></div>
+                            </div>
+                            <div class="col-md-3">
+                                Male
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                
+
         </div>
         <!-- /.row -->
 
         <!-- Table row -->
+          <div class="row" style="font-size:30px;text-align:center;padding-top:10px">
+                    -: Prescribtion :-
+                </div>
         <div class="row">
           <div class="col-xs-12 table-responsive">
             <table class="table table-striped">
               <thead>
               <tr>
-                <th>Qty</th>
-                <th>Product</th>
-                <th>Serial #</th>
+                <th>Medicine Type</th>
+                <th>Medicine Name</th>
                 <th>Description</th>
-                <th>Subtotal</th>
+                <th>Timings</th>
               </tr>
               </thead>
               <tbody>
               <tr>
-                <td>1</td>
-                <td>Call of Duty</td>
-                <td>455-981-221</td>
-                <td>El snort testosterone trophy driving gloves handsome</td>
-                <td>$64.50</td>
+                <td>Tablet</td>
+                <td>l-dio1</td>
+                <td></td>
+                <td>morning-night</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>Need for Speed IV</td>
-                <td>247-925-726</td>
-                <td>Wes Anderson umami biodiesel</td>
-                <td>$50.00</td>
+                <td>Tablet</td>
+                <td>l-dio1</td>
+                <td>empty stomach</td>
+                <td>once a day</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>Monsters DVD</td>
-                <td>735-845-642</td>
-                <td>Terry Richardson helvetica tousled street art master</td>
-                <td>$10.70</td>
+                <td>Tablet</td>
+                <td>l-dio1</td>
+                <td></td>
+                <td>morning-noon-night</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>Grown Ups Blue Ray</td>
-                <td>422-568-642</td>
-                <td>Tousled lomo letterpress</td>
-                <td>$25.99</td>
+                <td>Tablet</td>
+                <td>l-dio1</td>
+                <td></td>
+                <td>1-0-1</td>
               </tr>
               </tbody>
             </table>
@@ -101,48 +175,65 @@
           <!-- /.col -->
         </div>
         <!-- /.row -->
-
+          
+          <div class="row" style="font-size:30px;text-align:center;padding-bottom:10px">
+                    -: Payment :-
+                </div>
         <div class="row">
-          <!-- accepted payments column -->
-          <div class="col-xs-6">
-            <p class="lead">Payment Methods:</p>
-            <img src="../../dist/img/credit/visa.png" alt="Visa">
-            <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
-            <img src="../../dist/img/credit/american-express.png" alt="American Express">
-            <img src="../../dist/img/credit/paypal2.png" alt="Paypal">
-
-            <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
-              Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr
-              jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
-            </p>
-          </div>
-          <!-- /.col -->
-          <div class="col-xs-6">
-            <p class="lead">Amount Due 2/22/2014</p>
-
-            <div class="table-responsive">
-              <table class="table">
-                <tr>
-                  <th style="width:50%">Subtotal:</th>
-                  <td>$250.30</td>
-                </tr>
-                <tr>
-                  <th>Tax (9.3%)</th>
-                  <td>$10.34</td>
-                </tr>
-                <tr>
-                  <th>Shipping:</th>
-                  <td>$5.80</td>
-                </tr>
-                <tr>
-                  <th>Total:</th>
-                  <td>$265.24</td>
-                </tr>
-              </table>
-            </div>
+          <div class="col-xs-12 table-responsive">
+            <table class="table table-striped">
+              <tbody>
+              <tr>
+                <td>Consultation</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Medicines</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Injection Charges</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Home visit</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Procedure Charges</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Others</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>600</td>
+              </tr>
+              </tbody>
+            </table>
           </div>
           <!-- /.col -->
         </div>
+          <br>
+        <div>
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                    <u>                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </u>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4" style="text-align:center">
+                    Stamp &amp; Signature
+                </div>
+            </div>
+        </div>
+            
+    
         <!-- /.row -->
     </div>
   </section>

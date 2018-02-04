@@ -94,7 +94,7 @@ echo'
                 <div class="row" style="padding-top:15px;padding-bottom:15px">
                     <div class="col-md-5"></div>
                     <div class="col-md-2">
-                        <button type="submit" id="submit" class="btn btn-block btn-primary">Submit</button>
+                        <button type="submit" id="submit" class="btn btn-block btn-primary">Done</button>
                     </div>
                     <div class="col-md-5"></div>
                 </div>                  
