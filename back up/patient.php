@@ -10,7 +10,7 @@
 <head>
   <?php include '../html/head.html'; ?>    
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue fixed sidebar-mini">
 <div class="wrapper">
   <?php  
     include '../html/header.html';
@@ -237,50 +237,171 @@
                 </div>
                 <hr>
                 <h3 style=" padding-bottom:20px">Treatment</h3>
-                <div class="form-group ADD">
-                    <div class="row">
+                <div class="ADD">
+                    <div class="row form-group">
                         <div class="col-md-2">
                             <div style="float:right"><label>Medicine Name</label></div>
                         </div>
                         <div class="col-md-4" id="the-basics">
-                            <input type="text" id="medicine_name" class="form-control" placeholder="Enter ...">
+                            <input type="text" id="medicine_name" name="Medicine_Name[]" class="form-control" placeholder="Enter ...">
                         </div>
                         <div class="col-md-3">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input id="morning" type="checkbox">
-                                                Morning
-                                            </label>
-                                        </div>               
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input id="noon" type="checkbox">
-                                                Noon
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input id="night" type="checkbox">
-                                                Night
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <input type="text" id="course" class="form-control" placeholder="Enter ...">
+                            <select class="form-control" name="Type[]">
+                                <option>Tablet</option>
+                                <option>Syrup</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1 form-group">
+                            <input type="text" id="course" name="Quantity[]" class="form-control" placeholder="Quantity"> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4 form-group">
+                            <select class="form-control" name="Describtion[]">
+                                <option>Empty Stumach</option>
+                                <option>Syrup</option>
+                            </select>                            
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input id="morning" name="morning[]" value="m1" type="checkbox">
+                                            Morning
+                                        </label>
+                                    </div>               
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input id="noon" name="noon[]" type="checkbox">
+                                            Noon
+                                        </label>
                                     </div>
                                 </div>
+                                <div class="col-md-4">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input id="night" name="night[]" type="checkbox">
+                                            Night
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-1 form-group">
                             <button type="button" class="medicine_button btn btn-block btn-info">Add</button>
                         </div>
-                    </div> 
+                    </div>
                 </div>
+                
+                <hr>
+                <h3 style=" padding-bottom:20px">Payment</h3>
+                
+                <div class="row form-group">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="col-md-2">
+                            <div class="checkbox">
+                                <label>
+                                    <input id="Consultation" type="checkbox" value="Consultation">
+                                    Consultation
+                                </label>
+                            </div>               
+                        </div>
+                        <div class="col-md-2">
+                            <div class="checkbox">
+                                <label>
+                                    <input id="Medicines" type="checkbox" value="Medicines">
+                                    Medicines
+                                </label>
+                            </div>               
+                        </div>
+                        <div class="col-md-2">
+                            <div class="checkbox">
+                                <label>
+                                    <input id="Injection" type="checkbox" value="Injection">
+                                    Injection
+                                </label>
+                            </div>               
+                        </div>
+                        <div class="col-md-2">
+                            <div class="checkbox">
+                                <label>
+                                    <input id="Home" type="checkbox" value="Home">
+                                    Home
+                                </label>
+                            </div>               
+                        </div>
+                        <div class="col-md-2">
+                            <div class="checkbox">
+                                <label>
+                                    <input id="Procedure" type="checkbox" value="Procedure">
+                                    Procedure
+                                </label>
+                            </div>               
+                        </div>
+                        <div class="col-md-2">
+                            <div class="checkbox">
+                                <label>
+                                    <input id="Other" type="checkbox" value="Other">
+                                    Other
+                                </label>
+                            </div>               
+                        </div>
+                    </div>
+                </div>
+                <div class="row Consultation form-group">
+                    <div class="col-md-2">
+                        <div style="float:right"><label>Consultation</label></div>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" id="Consultation" class="form-control" placeholder="Enter ...">    
+                    </div>
+                </div>
+                <div class="row Medicines form-group">
+                    <div class="col-md-2">
+                        <div style="float:right"><label>Medicines</label></div>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" id="Medicines" class="form-control" placeholder="Enter ...">    
+                    </div>
+                </div>
+                <div class="row Injection form-group">
+                    <div class="col-md-2">
+                        <div style="float:right"><label>Injection charges</label></div>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" id="Injection" class="form-control" placeholder="Enter ...">    
+                    </div>
+                </div>
+                <div class="row Home form-group">
+                    <div class="col-md-2">
+                        <div style="float:right"><label>Home Visit</label></div>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" id="Home" class="form-control" placeholder="Enter ...">    
+                    </div>
+                </div>
+                <div class="row Procedure form-group">
+                    <div class="col-md-2">
+                        <div style="float:right"><label>Procedure Charges</label></div>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" id="Procedure" class="form-control" placeholder="Enter ...">    
+                    </div>
+                </div>
+                <div class="row Other form-group">
+                    <div class="col-md-2">
+                        <div style="float:right"><label>Other</label></div>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" id="Other" class="form-control" placeholder="Enter ...">    
+                    </div>
+                </div>                    
+                
                 <div class="row" style="padding-top:15px;padding-bottom:15px">
                     <div class="col-md-4"></div>
                     <div class="col-md-2">
@@ -308,27 +429,6 @@
 <!-- ./wrapper -->
 <?php include '../html/js.html';?>
 <script>
-    $(document).ready(function() {
-        var max_fields      = 10; //maximum input boxes allowed
-        var wrapper         = $(".ADD"); //Fields wrapper
-        var add_button      = $(".medicine_button"); //Add button ID
-
-        var x = 1; //initlal text box count
-        $(add_button).click(function(e){ //on add input button click
-            e.preventDefault();
-            if(x < max_fields){ //max input box allowed
-                x++; //text box increment
-                $(wrapper).append('<div><div class="row"><div class="col-md-2"><div style="float:right"><label>Medicine Name</label></div></div><div class="col-md-4 MEDICINE"><input type="text" id="medicine_name" class="form-control" placeholder="Enter ..."></div><div class="col-md-3"><div class="row"><div class="col-md-3"><div class="checkbox"><label><input id="morning" type="checkbox">Morning</label></div></div><div class="col-md-3"><div class="checkbox"><label><input id="noon" type="checkbox">Noon</label></div></div><div class="col-md-3"><div class="checkbox"><label><input id="night" type="checkbox">Night</label></div></div><div class="col-md-3"><input type="text" id="course" class="form-control" placeholder="Enter ..."></div></div></div><div class="col-md-1"><button type="button" class="remove_field btn btn-block btn-info">Remove</button></div></div></div>'); //add input box
-                }                      
-            }
-        );
-        
-        $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-            e.preventDefault(); $(this).parent('div').parent('div').parent('div').remove(); x--;
-        })
-    });
-</script>
-<script>
     $(document).ready(function(){
         $("#Patient_Number").hide();
         $("#Contact_Number").hide();
@@ -345,6 +445,52 @@
                 $("#Contact_Number").show();                        
           }
       })        
+    });
+</script>
+    
+<script type="text/javascript">
+    $(document).ready(function(){
+        
+        $(".Consultation").hide();
+        $(".Medicines").hide();
+        $(".Injection").hide();
+        $(".Home").hide();
+        $(".Procedure").hide();
+        $(".Other").hide();
+        
+        $('input[type="checkbox"]').click(function(){
+            var inputValue = $(this).attr("value");
+            $("." + inputValue).toggle();
+        });
+    });
+</script>
+    
+<script>
+    $(document).ready(function() {
+        var max_fields      = 10; //maximum input boxes allowed
+        var wrapper         = $(".ADD"); //Fields wrapper
+        var add_button      = $(".medicine_button"); //Add button ID
+
+        var x = 1; //initlal text box count
+        $(add_button).click(function(e){ //on add input button click
+            e.preventDefault();
+            if(x < max_fields){ //max input box allowed
+                x++; //text box increment
+//                $(wrapper).append('<div><div class="row"><div class="col-md-2"><div style="float:right"><label>Medicine Name</label></div></div><div class="col-md-4 MEDICINE"><input type="text" id="medicine_name" class="form-control" placeholder="Enter ..."></div><div class="col-md-3"><div class="row"><div class="col-md-3"><div class="checkbox"><label><input id="morning" type="checkbox">Morning</label></div></div><div class="col-md-3"><div class="checkbox"><label><input id="noon" type="checkbox">Noon</label></div></div><div class="col-md-3"><div class="checkbox"><label><input id="night" type="checkbox">Night</label></div></div><div class="col-md-3"><input type="text" id="course" class="form-control" placeholder="Enter ..."></div></div></div><div class="col-md-1"><button type="button" class="remove_field btn btn-block btn-info">Remove</button></div></div></div>'); //add input box
+                $(wrapper).append('<div><div class="row form-group"><div class="col-md-2"><div style="float:right"><label>Medicine Name</label></div></div><div class="col-md-4" id="the-basics"><input type="text" id="medicine_name" name="Medicine_Name[]" class="form-control" placeholder="Enter ..."></div><div class="col-md-3"><select class="form-control" name="Type[]"><option>Tablet</option><option>Syrup</option></select></div><div class="col-md-1 form-group"><input type="text" id="course" name="Quantity[]" class="form-control" placeholder="Quantity"></div></div><div class="row"><div class="col-md-2"></div><div class="col-md-4 form-group"><select class="form-control" name="Describtion[]"><option>Empty Stumach</option><option>Syrup</option></select></div><div class="col-md-3 form-group"><div class="row"><div class="col-md-4"><div class="checkbox"><label><input id="morning" name="morning[]" value="m'+x+'" type="checkbox">Morning</label></div></div><div class="col-md-4"><div class="checkbox"><label><input id="noon" name="noon[]" type="checkbox">Noon</label></div></div><div class="col-md-4"><div class="checkbox"><label><input id="night" name="night[]" type="checkbox">Night</label></div></div></div></div><div class="col-md-1 form-group"><button type="button" class="remove_field btn btn-block btn-info">Remove</button></div></div></div>'); 
+                }                      
+            }
+        );
+        
+        $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+            e.preventDefault(); $(this).parent('div').parent('div').parent('div').remove(); x--;
+        })
+    });
+</script>  
+    
+<script>
+    $(document).ready(function(){
+         
     });
 </script>
 </body>

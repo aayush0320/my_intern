@@ -113,7 +113,7 @@ $(document).ready(function(){
                 
         $.ajax({
                 type: 'POST',
-                url: 'patient_reg_ajax.php', 
+                url: '../ajax/patient_reg_ajax.php', 
                 data: {Name : $('#Name').val(), Age : $('#Age').val(), Sex : $('#Sex').val(), Contact : $('#Contact').val(), Prime : $('#Prime').val(), Address : $('#Address').val()},
                 success: function(html){
             $("#replace").html(html);

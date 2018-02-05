@@ -41,7 +41,7 @@ $_SESSION["total_new_medicine"]=1;
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <form role="form" method="post" action="new_medicine.php">
+              <form role="form" method="post" action="../db/db_medicine.php">
                 <h3 style=" padding-bottom:20px">Suppler'; echo "'s "; echo 'Information</h3>
                 <div class="form-group">
                     <div class="row">
